@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const { getUserById} = require("../db");
+const { getUserById } = require("../db");
 const { JWT_SECRET } = process.env;
 
 const express = require("express");
@@ -35,7 +35,6 @@ apiRouter.use(async (req, res, next) => {
     });
   }
 });
-
 
 apiRouter.use((req, res, next) => {
   console.log("I am working 4");
